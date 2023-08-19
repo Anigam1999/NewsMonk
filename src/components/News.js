@@ -65,6 +65,6 @@ export default class News extends React.Component {
                 </div>
             </div>
         </div>
-    )
+    ) 
   }
 }
