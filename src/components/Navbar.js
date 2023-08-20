@@ -1,13 +1,10 @@
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default class Navbar extends React.Component {
-
-  render() {
+const Navbar = ()=> { 
     return (
       <div>
-    <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav className="navbar fixed-top bg-dark border-bottom border-body" data-bs-theme="dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">NewsMonk</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,5 +42,6 @@ export default class Navbar extends React.Component {
     </nav>
     </div>
     )
-  }
 }
+
+export default Navbar
